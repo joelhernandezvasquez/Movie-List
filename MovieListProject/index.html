@@ -1,0 +1,72 @@
+<html>
+
+<head>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>Movie List App</title>
+ <link href="style.css" rel="stylesheet">
+ <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="backdrop"> </div>
+
+    <div class="movie-modal">
+        
+        <div class="movie-content">
+            <label for="movie-title"> Movie Title </label>
+            <input type="text" id="movie-title">
+
+            <label for="movie-image"> Image Url </label>
+            <input type="text" id="movie-image">
+
+            <label for="rating"> Your Rating </label>
+            <input type="number" id="rating" step="1" max="5" min="1">
+        </div>
+        
+        <div class="movie-content-btn">
+            <button class="btn-cancel btn"> Cancel </button>
+            <button class="btn-add btn"> Add</button>
+        </div>
+    </div>
+
+    <div class="delete-movie-modal">
+        <div class="delete-movie-header">
+            <h2> Are you sure?</h2>
+        </div>
+
+        <div class="delete-movie-content">
+            <p>Are you sure you want to delete this item? This action can't be made undone!</p>
+        </div>
+
+        <div class="delete-movie-btn">
+            <button class="btn btn-abort"> No (Cancel)</button>
+            <button class="btn btn-delete"> Yes</button>
+        </div>
+    </div>
+    
+    <header class="main-header">
+        <h1> Favorite Movie</h1>
+        <button> ADD MOVIE</button>
+    </header>
+
+    
+    <main>
+        <section class="content-area"> 
+        
+            <div class="welcome-container box-card ">
+                <p> Your Personal Movie Database!</p>
+            </div>
+
+            <div class="movie-list-container box-card">
+                <ul class="movie-list"> </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
